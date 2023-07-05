@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/restoranbg.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -37,7 +37,7 @@ nav img{
     text-decoration: none;
     font-size: 13px;
 }
-/*--menu---*/ 
+/*--pilihan menu---*/ 
 .nav-links ul li::after{
     content: '';
     width: 0%;       /*--awalnya 100 namun diganti 0 agar garis bwh pd menu hilang, muncul ketika kursor diarahkan--*/
@@ -61,7 +61,7 @@ nav img{
     text-align: center;
 }
 .text-box h1{
-    font-size: 60px;
+    font-size: 62px;
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -91,22 +91,22 @@ nav .fa{
 
 
    /* xs */
-@media (min-width: 475px){
+@media (max-width: 475px){
 }
 /* sm */
-@media (min-width: 640px){
+@media (max-width: 640px){
 }
 /* md */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 }
 /* lg */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 }
 /* xl */
-@media (min-width: 1280px){
+@media (max-width: 1280px){
 }
 /* 2xl */
-@media (min-width: 1536px){
+@media (max-width: 1536px){
 }
     .text-box h1{
         font-size: 20px;
@@ -137,8 +137,8 @@ nav .fa{
     }
 }
 
-/*------- courses --------*/
-.course{
+/*------- online booking --------*/
+.onlinebooking{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -162,7 +162,7 @@ p{
     display: flex;
     justify-content: space-between;
 }
-.course-col{
+.onlinebooking-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -176,51 +176,52 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
-.course-col:hover{
+.onlinebooking-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
     /* xs */
-@media (min-width: 475px){
+@media (max-width: 475px){
 }
 /* sm */
-@media (min-width: 640px){
+@media (max-width: 640px){
 }
 /* md */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 }
 /* lg */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 }
 /* xl */
-@media (min-width: 1280px){
+@media (max-width: 1280px){
 }
 /* 2xl */
-@media (min-width: 1536px){
+@media (max-width: 1536px){
 }
 
     .row{
-        flex-direction: column;
+        flex-direction: row;
     }
 
 
-/*---------campus------*/
+/*--------restaurant------*/
 
-.campus{
+.restaurant{    /*----tulisan----*/
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
-.campus-col{
+.restaurant-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.campus-col img{
+.restaurant-col img{
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 .layer{
     background: transparent;
@@ -251,31 +252,34 @@ h3{
     opacity: 1;
 }
 
-/*-----------facilities----------*/
+/*-----------menu----------*/
 
-.facilities{
+.menu{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
-.facilities-col{
+.menu-col{
     flex-basis: 31%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
 }
-.facilities-col img{
+.menu-col img{
     width: 100%;
     border-radius: 10px;
 }
-.facilities-col p{
+.menu-col p{
     padding: 0;
 }
-.facilities-col h3{
+.menu-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+
+    flex-wrap: nowrap;
+
 }
 
 /*-------testimonials----------*/
@@ -313,22 +317,22 @@ h3{
     color: #f44336;
 }
    /* xs */
-@media (min-width: 475px){
+@media (max-width: 475px){
 }
 /* sm */
-@media (min-width: 640px){
+@media (max-width: 640px){
 }
 /* md */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 }
 /* lg */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 }
 /* xl */
-@media (min-width: 1280px){
+@media (max-width: 1280px){
 }
 /* 2xl */
-@media (min-width: 1536px){
+@media (max-width: 1536px){
 }
 .testimonial-col img{
     margin-left: 0px;
@@ -336,31 +340,6 @@ h3{
 }
 
 
-/*------ call to action -------*/
-
-.cta{
-    margin: 100px auto;
-    width: 80%;
-    background-image: linear-
-    gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.cta h1{
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 0;
-}
-
-@media(max-width: 700px){
-    .cta h1{
-        font-size: 24px;
-    }
-}
 /*-----footer------*/
 .footer{
     width: 100%;
@@ -381,6 +360,23 @@ h3{
 }
 .fa-heart-o{
     color: #f44336;
+}
+
+/*-------about us page--------*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-
+    gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    
+    
+
+
 }
 
  

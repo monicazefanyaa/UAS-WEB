@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
+    <title>Our Menu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,21 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
 <body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="http://localhost/rtbs/">BOOKING</a></li>
+               </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> 
+        </nav>
+        <h1>Our Menu</h1>
 
    
 </section>
@@ -20,7 +35,7 @@
  <!---------Menu---------->
 
  <section class="menu">
-    <h1>Our Menu</h1>
+    <h3>Our Menu</h3>
     <p>Whether you choose to indulge in a pizza, savor the luxury of lobster, or explore the delicate artistry of sushi, 
         our menu at Our Global Restaurant promises to take your taste buds on a delightful culinary journey filled with 
         exquisite flavors and culinary craftsmanship.</p>
